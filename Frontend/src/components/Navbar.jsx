@@ -68,6 +68,22 @@ const Navbar = () => {
           >
             + Add Job
           </Button>
+          <Button
+            href="http://localhost:3000/AdminDashBoard"
+            variant="contained"
+            sx={{
+              textTransform: "none",
+              borderRadius: "10px",
+              fontWeight: 600,
+              background: "linear-gradient(90deg, #1976d2, #42a5f5)",
+              boxShadow: "0 4px 15px rgba(25,118,210,0.3)",
+              "&:hover": {
+                background: "linear-gradient(90deg, #1565c0, #1e88e5)",
+              },
+            }}
+          >
+            DashBoard
+          </Button>
         </Box>
 
       </Toolbar>
