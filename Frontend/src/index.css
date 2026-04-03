@@ -1,0 +1,131 @@
+/* 🔥 Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌈 Background */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  min-height: 100vh;
+  color: #1f2937;
+}
+
+/* 🧊 Smooth UI everywhere */
+* {
+  transition: all 0.25s ease-in-out;
+}
+
+/* ========================= */
+/* 🔍 SEARCH BAR STYLING */
+/* ========================= */
+
+.MuiTextField-root {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(8px);
+  border-radius: 16px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 16px !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+/* ========================= */
+/* 📦 CARD STYLING */
+/* ========================= */
+
+.MuiCard-root {
+  border-radius: 20px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease !important;
+}
+
+/* ✨ Hover animation */
+.MuiCard-root:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ========================= */
+/* 📝 TEXT STYLING */
+/* ========================= */
+
+.MuiTypography-h5 {
+  font-weight: 700 !important;
+  color: #111827;
+}
+
+.MuiTypography-body1,
+.MuiTypography-body2 {
+  color: #4b5563 !important;
+  line-height: 1.6 !important;
+}
+
+/* ========================= */
+/* 🏷️ SKILLS / TAG STYLE */
+/* ========================= */
+
+.MuiTypography-body {
+  display: inline-block;
+  background: #e3f2fd;
+  padding: 4px 10px;
+  margin: 3px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+/* ========================= */
+/* 🎯 ICON STYLING */
+/* ========================= */
+
+.MuiSvgIcon-root {
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Delete icon */
+.MuiSvgIcon-root:nth-of-type(1):hover {
+  color: #e53935;
+  transform: scale(1.2);
+}
+
+/* Edit icon */
+.MuiSvgIcon-root:nth-of-type(2):hover {
+  color: #1e88e5;
+  transform: scale(1.2);
+}
+
+/* ========================= */
+/* 📱 GRID SPACING FIX */
+/* ========================= */
+
+.MuiGrid-item {
+  display: flex;
+}
+
+/* ========================= */
+/* 📜 SCROLLBAR */
+/* ========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

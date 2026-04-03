@@ -1,0 +1,47 @@
+ public JobRepo(){
+ List<JobPost> jobs = new ArrayList<>();
+
+        JobPost j1 = new JobPost();
+        j1.setPostId(1);
+        j1.setPostProfile("Java Developer");
+        j1.setPostDesc("Must have good experience in Core Java and Spring Boot");
+        j1.setReqExperience(2);
+        j1.setPostTechStack(Arrays.asList("Core Java", "Spring Boot", "Hibernate"));
+        jobs.add(j1);
+
+        // 2
+        JobPost j2 = new JobPost();
+        j2.setPostId(2);
+        j2.setPostProfile("Frontend Developer");
+        j2.setPostDesc("Build responsive web apps using React");
+        j2.setReqExperience(3);
+        j2.setPostTechStack(Arrays.asList("HTML", "CSS", "JavaScript", "React"));
+        jobs.add(j2);
+
+        // 3
+        JobPost j3 = new JobPost();
+        j3.setPostId(3);
+        j3.setPostProfile("Data Scientist");
+        j3.setPostDesc("Work on ML models and data analysis");
+        j3.setReqExperience(4);
+        j3.setPostTechStack(Arrays.asList("Python", "Machine Learning", "Pandas"));
+        jobs.add(j3);
+
+        // 4
+        JobPost j4 = new JobPost();
+        j4.setPostId(4);
+        j4.setPostProfile("Network Engineer");
+        j4.setPostDesc("Design and manage network systems");
+        j4.setReqExperience(5);
+        j4.setPostTechStack(Arrays.asList("Networking", "Cisco", "Routing", "Switching"));
+        jobs.add(j4);
+
+        // 5
+        JobPost j5 = new JobPost();
+        j5.setPostId(5);
+        j5.setPostProfile("Android Developer");
+        j5.setPostDesc("Develop Android apps using Java/Kotlin");
+        j5.setReqExperience(2);
+        j5.setPostTechStack(Arrays.asList("Java", "Kotlin", "Android SDK"));
+        jobs.add(j5);
+    }
