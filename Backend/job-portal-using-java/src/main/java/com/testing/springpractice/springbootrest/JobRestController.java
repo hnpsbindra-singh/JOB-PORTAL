@@ -1,7 +1,9 @@
 package com.testing.springpractice.springbootrest;
 
 import com.testing.springpractice.springbootrest.Model.JobPost;
+import com.testing.springpractice.springbootrest.Model.Stats;
 import com.testing.springpractice.springbootrest.service.JobService;
+import com.testing.springpractice.springbootrest.service.StatsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.origin.Origin;
 import org.springframework.stereotype.Controller;
@@ -14,6 +16,9 @@ import java.util.List;
 public class JobRestController {
     @Autowired
     private JobService srv;
+
+    @Autowired
+    private StatsService stat;
 
     @GetMapping("jobPosts")
     @ResponseBody
@@ -52,4 +57,8 @@ public class JobRestController {
        return srv.search(keyword, keyword);
     }
 
+    @GetMapping("/admin/stats")
+    public Stats result(){
+        return stat.getStats();
+    }
 }
